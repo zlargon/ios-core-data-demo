@@ -20,6 +20,12 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    // create MainTableViewController, and set it to window rootViewController
+    MainTableViewController* mainTableViewController = [[MainTableViewController alloc] initWithNibName:@"MainTableViewController"
+                                                                                                  bundle:nil];
+    self.window.rootViewController = mainTableViewController;
+
     return YES;
 }
 
