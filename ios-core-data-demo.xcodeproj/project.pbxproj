@@ -22,6 +22,8 @@
 		CF0E871119318C6B008A800B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0E86F519318C6B008A800B /* CoreData.framework */; };
 		CF0E871919318C6B008A800B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF0E871719318C6B008A800B /* InfoPlist.strings */; };
 		CF0E871B19318C6B008A800B /* ios_core_data_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0E871A19318C6B008A800B /* ios_core_data_demoTests.m */; };
+		CF0E872719319673008A800B /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0E872519319673008A800B /* MainTableViewController.m */; };
+		CF0E872819319673008A800B /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0E872619319673008A800B /* MainTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		CF0E871619318C6B008A800B /* ios-core-data-demoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-core-data-demoTests-Info.plist"; sourceTree = "<group>"; };
 		CF0E871819318C6B008A800B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF0E871A19318C6B008A800B /* ios_core_data_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_core_data_demoTests.m; sourceTree = "<group>"; };
+		CF0E872419319673008A800B /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTableViewController.h; path = "ios-core-data-demo/MainTableViewController.h"; sourceTree = "<group>"; };
+		CF0E872519319673008A800B /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTableViewController.m; path = "ios-core-data-demo/MainTableViewController.m"; sourceTree = "<group>"; };
+		CF0E872619319673008A800B /* MainTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainTableViewController.xib; path = "ios-core-data-demo/MainTableViewController.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,9 @@
 		CF0E86E319318C6B008A800B = {
 			isa = PBXGroup;
 			children = (
+				CF0E872419319673008A800B /* MainTableViewController.h */,
+				CF0E872519319673008A800B /* MainTableViewController.m */,
+				CF0E872619319673008A800B /* MainTableViewController.xib */,
 				CF0E86F719318C6B008A800B /* ios-core-data-demo */,
 				CF0E871419318C6B008A800B /* ios-core-data-demoTests */,
 				CF0E86EE19318C6B008A800B /* Frameworks */,
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0E86FC19318C6B008A800B /* InfoPlist.strings in Resources */,
+				CF0E872819319673008A800B /* MainTableViewController.xib in Resources */,
 				CF0E870719318C6B008A800B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0E872719319673008A800B /* MainTableViewController.m in Sources */,
 				CF0E870219318C6B008A800B /* AppDelegate.m in Sources */,
 				CF0E86FE19318C6B008A800B /* main.m in Sources */,
 				CF0E870519318C6B008A800B /* ios_core_data_demo.xcdatamodeld in Sources */,
@@ -447,6 +457,7 @@
 				CF0E872019318C6B008A800B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF0E872119318C6B008A800B /* Build configuration list for PBXNativeTarget "ios-core-data-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +466,7 @@
 				CF0E872319318C6B008A800B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
