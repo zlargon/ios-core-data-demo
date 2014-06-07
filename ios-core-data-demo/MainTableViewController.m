@@ -7,6 +7,7 @@
 //
 
 #import "MainTableViewController.h"
+#import "AddViewController.h"
 
 @interface MainTableViewController ()
 
@@ -23,6 +24,16 @@
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    // create add button
+    UIButton* addButton = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [addButton addTarget:self
+                  action:@selector(gotoAddViewController:)
+        forControlEvents:UIControlEventTouchUpInside];
+
+    // put 'add button' to navigation left button
+    UIBarButtonItem* leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:addButton];
+    self.navigationItem.leftBarButtonItem = leftButtonItem;
 
     // init title list
     self.titleList = @[
@@ -136,5 +147,12 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 */
+
+- (void)gotoAddViewController:(id)sender
+{
+    AddViewController *addViewController = [[AddViewController alloc] initWithNibName:@"AddViewController"
+                                                                               bundle:nil];
+    [self.navigationController pushViewController:addViewController animated:YES];
+}
 
 @end
