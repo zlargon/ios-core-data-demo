@@ -35,6 +35,7 @@
     // put 'add button' to navigation left button
     UIBarButtonItem* leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:addButton];
     self.navigationItem.leftBarButtonItem = leftButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
     // init title list
     self.titleList = @[
