@@ -70,10 +70,11 @@
 
     // Configure the cell...
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault
+        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle
                                       reuseIdentifier: @"myCell"];
     }
     cell.textLabel.text = self.tableList[indexPath.section][indexPath.row];
+    cell.detailTextLabel.text = @"detail information...";
 
     return cell;
 }
