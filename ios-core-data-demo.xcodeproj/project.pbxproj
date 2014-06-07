@@ -24,6 +24,7 @@
 		CF0E871B19318C6B008A800B /* ios_core_data_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0E871A19318C6B008A800B /* ios_core_data_demoTests.m */; };
 		CF0E872719319673008A800B /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0E872519319673008A800B /* MainTableViewController.m */; };
 		CF0E872819319673008A800B /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0E872619319673008A800B /* MainTableViewController.xib */; };
+		CF35E1C6194344D10071FF4C /* leaf_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF35E1C5194344D10071FF4C /* leaf_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		CF0E872419319673008A800B /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTableViewController.h; path = "ios-core-data-demo/MainTableViewController.h"; sourceTree = "<group>"; };
 		CF0E872519319673008A800B /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTableViewController.m; path = "ios-core-data-demo/MainTableViewController.m"; sourceTree = "<group>"; };
 		CF0E872619319673008A800B /* MainTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainTableViewController.xib; path = "ios-core-data-demo/MainTableViewController.xib"; sourceTree = "<group>"; };
+		CF35E1C5194344D10071FF4C /* leaf_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		CF0E86E319318C6B008A800B = {
 			isa = PBXGroup;
 			children = (
+				CF35E1C5194344D10071FF4C /* leaf_icon.png */,
 				CF0E872419319673008A800B /* MainTableViewController.h */,
 				CF0E872519319673008A800B /* MainTableViewController.m */,
 				CF0E872619319673008A800B /* MainTableViewController.xib */,
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0E86FC19318C6B008A800B /* InfoPlist.strings in Resources */,
+				CF35E1C6194344D10071FF4C /* leaf_icon.png in Resources */,
 				CF0E872819319673008A800B /* MainTableViewController.xib in Resources */,
 				CF0E870719318C6B008A800B /* Images.xcassets in Resources */,
 			);

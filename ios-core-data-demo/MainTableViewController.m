@@ -73,8 +73,11 @@
         cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle
                                       reuseIdentifier: @"myCell"];
     }
+
+    cell.imageView.image = [UIImage imageNamed:@"leaf_icon"];
     cell.textLabel.text = self.tableList[indexPath.section][indexPath.row];
     cell.detailTextLabel.text = @"detail information...";
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 
     return cell;
 }
