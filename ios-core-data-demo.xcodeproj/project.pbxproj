@@ -25,6 +25,10 @@
 		CF0E872719319673008A800B /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0E872519319673008A800B /* MainTableViewController.m */; };
 		CF0E872819319673008A800B /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0E872619319673008A800B /* MainTableViewController.xib */; };
 		CF35E1C6194344D10071FF4C /* leaf_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF35E1C5194344D10071FF4C /* leaf_icon.png */; };
+		CF35E1CA19434ACE0071FF4C /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF35E1C819434ACE0071FF4C /* AddViewController.m */; };
+		CF35E1CB19434ACE0071FF4C /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF35E1C919434ACE0071FF4C /* AddViewController.xib */; };
+		CF35E1CF19434B500071FF4C /* ModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF35E1CD19434B500071FF4C /* ModifyViewController.m */; };
+		CF35E1D019434B500071FF4C /* ModifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF35E1CE19434B500071FF4C /* ModifyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,12 @@
 		CF0E872519319673008A800B /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTableViewController.m; path = "ios-core-data-demo/MainTableViewController.m"; sourceTree = "<group>"; };
 		CF0E872619319673008A800B /* MainTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainTableViewController.xib; path = "ios-core-data-demo/MainTableViewController.xib"; sourceTree = "<group>"; };
 		CF35E1C5194344D10071FF4C /* leaf_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf_icon.png; sourceTree = "<group>"; };
+		CF35E1C719434ACE0071FF4C /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		CF35E1C819434ACE0071FF4C /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		CF35E1C919434ACE0071FF4C /* AddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		CF35E1CC19434B500071FF4C /* ModifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyViewController.h; sourceTree = "<group>"; };
+		CF35E1CD19434B500071FF4C /* ModifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyViewController.m; sourceTree = "<group>"; };
+		CF35E1CE19434B500071FF4C /* ModifyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModifyViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +101,12 @@
 		CF0E86E319318C6B008A800B = {
 			isa = PBXGroup;
 			children = (
+				CF35E1CC19434B500071FF4C /* ModifyViewController.h */,
+				CF35E1CD19434B500071FF4C /* ModifyViewController.m */,
+				CF35E1CE19434B500071FF4C /* ModifyViewController.xib */,
+				CF35E1C719434ACE0071FF4C /* AddViewController.h */,
+				CF35E1C819434ACE0071FF4C /* AddViewController.m */,
+				CF35E1C919434ACE0071FF4C /* AddViewController.xib */,
 				CF35E1C5194344D10071FF4C /* leaf_icon.png */,
 				CF0E872419319673008A800B /* MainTableViewController.h */,
 				CF0E872519319673008A800B /* MainTableViewController.m */,
@@ -239,8 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF35E1D019434B500071FF4C /* ModifyViewController.xib in Resources */,
 				CF0E86FC19318C6B008A800B /* InfoPlist.strings in Resources */,
 				CF35E1C6194344D10071FF4C /* leaf_icon.png in Resources */,
+				CF35E1CB19434ACE0071FF4C /* AddViewController.xib in Resources */,
 				CF0E872819319673008A800B /* MainTableViewController.xib in Resources */,
 				CF0E870719318C6B008A800B /* Images.xcassets in Resources */,
 			);
@@ -261,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF35E1CF19434B500071FF4C /* ModifyViewController.m in Sources */,
+				CF35E1CA19434ACE0071FF4C /* AddViewController.m in Sources */,
 				CF0E872719319673008A800B /* MainTableViewController.m in Sources */,
 				CF0E870219318C6B008A800B /* AppDelegate.m in Sources */,
 				CF0E86FE19318C6B008A800B /* main.m in Sources */,
