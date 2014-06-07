@@ -10,4 +10,7 @@
 
 @interface MainTableViewController : UITableViewController
 
+@property (strong) NSMutableArray* titleList;
+@property (strong) NSMutableArray* tableList;
+
 @end

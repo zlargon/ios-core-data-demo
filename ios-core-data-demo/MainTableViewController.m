@@ -23,6 +23,20 @@
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    // init title list
+    self.titleList = @[
+        @"iPhone Family",
+        @"iPod Family",
+        @"iPad Family"
+    ].mutableCopy;
+
+    // init table list
+    self.tableList = @[
+        @[@"Iphone5C", @"Iphone5S"],
+        @[@"IPod32", @"IPod64", @"IPod128", @"IPod mini"],
+        @[@"IPad air", @"IPad mini"]
+    ].mutableCopy;
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,13 +50,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 2;
+    return [self.titleList count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 3;
+    return [self.tableList[section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -54,7 +68,7 @@
         cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault
                                       reuseIdentifier: @"myCell"];
     }
-    cell.textLabel.text = @"Hello World";
+    cell.textLabel.text = self.tableList[indexPath.section][indexPath.row];
 
     return cell;
 }
