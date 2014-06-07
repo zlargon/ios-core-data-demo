@@ -21,10 +21,14 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-    // create MainTableViewController, and set it to window rootViewController
+    // create MainTableViewController with title 'Main'
     MainTableViewController* mainTableViewController = [[MainTableViewController alloc] initWithNibName:@"MainTableViewController"
                                                                                                   bundle:nil];
-    self.window.rootViewController = mainTableViewController;
+    mainTableViewController.title = @"Main";
+
+    // create navigation controller, and set it to window rootViewController
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:mainTableViewController];
+    self.window.rootViewController = self.navigationController;
 
     return YES;
 }
