@@ -11,7 +11,7 @@
 #import "Beverage.h"
 
 @class AppDelegate, Beverage;
-@interface ModifyViewController : UIViewController
+@interface ModifyViewController : UIViewController <UITextFieldDelegate>
 
 @property (assign, nonatomic) AppDelegate *appDelegate;
 @property (assign, nonatomic) Beverage *currentBeverage;

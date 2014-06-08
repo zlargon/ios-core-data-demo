@@ -37,6 +37,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    // setup text field delegate
+    self.titleTextField.delegate = self;
+    self.detailTextField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,7 +49,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)modifyItem:(id)sender {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (IBAction)modifyItem:(id)sender
+{
     NSLog(@"Modify Item");
 }
 
