@@ -19,6 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     }
     return self;
 }

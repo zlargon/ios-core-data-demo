@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+
+@class AppDelegate;
 
 @interface AddViewController : UIViewController
 
+@property (assign, nonatomic) AppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextField *detailTextField;
 - (IBAction)addItem:(id)sender;
