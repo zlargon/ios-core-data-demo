@@ -57,7 +57,15 @@
 
 - (IBAction)modifyItem:(id)sender
 {
-    NSLog(@"Modify Item");
+    self.currentBeverage.title = self.titleTextField.text;
+    self.currentBeverage.detail = self.detailTextField.text;
+
+    // sava Beverage CoreData
+    NSError *error = nil;
+    NSLog([self.appDelegate.managedObjectContext save:&error] ? @"Success" : @"Fail");
+
+    // popup this page from navigation controller (go back to MainTableViewController)
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
