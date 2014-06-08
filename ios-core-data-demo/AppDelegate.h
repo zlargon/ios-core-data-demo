@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MainTableViewController.h"
+#import "Beverage.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -17,8 +18,10 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (strong, nonatomic) UINavigationController* navigationController;
+@property (strong, nonatomic) NSMutableArray* tableList;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (void) loadDataFromCoreData;
 
 @end

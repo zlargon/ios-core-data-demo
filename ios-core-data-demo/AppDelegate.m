@@ -156,4 +156,18 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
+// load data from core data, and store into tableList
+- (void)loadDataFromCoreData
+{
+    // prepare request to get data from Beverage Core Data
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Beverage"
+                                              inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:entity];
+
+    // excute request and save into tableList
+    NSError *error;
+    self.tableList = [self.managedObjectContext executeFetchRequest:request error:&error].mutableCopy;
+}
+
 @end
