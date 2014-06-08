@@ -43,7 +43,17 @@
 }
 
 - (IBAction)addItem:(id)sender {
-    NSLog(@"Add Item");
+    Beverage *beverage = [NSEntityDescription insertNewObjectForEntityForName:@"Beverage"
+                                                       inManagedObjectContext:self.appDelegate.managedObjectContext];
+    beverage.title =self.titleTextField.text;
+    beverage.detail = self.detailTextField.text;
+
+    // sava Beverage Core Data
+    NSError* error;
+    NSLog([self.appDelegate.managedObjectContext save:&error] ? @"Success" : @"Fail");
+
+    // popup this page from navigation controller (go back to tableViewController)
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
