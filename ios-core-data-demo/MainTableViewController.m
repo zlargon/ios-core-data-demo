@@ -54,20 +54,6 @@
     UIBarButtonItem* leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:addButton];
     self.navigationItem.leftBarButtonItem = leftButtonItem;
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
-    // init title list
-    self.titleList = @[
-        @"iPhone Family",
-        @"iPod Family",
-        @"iPad Family"
-    ].mutableCopy;
-
-    // init table list
-    self.tableList = @[
-        @[@"Iphone5C", @"Iphone5S"],
-        @[@"IPod32", @"IPod64", @"IPod128", @"IPod mini"],
-        @[@"IPad air", @"IPad mini"]
-    ].mutableCopy;
 }
 
 - (void)didReceiveMemoryWarning
@@ -81,18 +67,18 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return [self.titleList count];
+    return 1; // only one section
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.tableList[section] count];
+    return self.appDelegate.tableList.count;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return self.titleList[section];
+    return @"Beverage"; // only one section
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -106,9 +92,12 @@
     }
 
     cell.imageView.image = [UIImage imageNamed:@"leaf_icon"];
-    cell.textLabel.text = self.tableList[indexPath.section][indexPath.row];
-    cell.detailTextLabel.text = @"detail information...";
     cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+
+    // get beverage from appDelegate
+    Beverage *beverage = self.appDelegate.tableList[indexPath.row];
+    cell.textLabel.text = beverage.title;
+    cell.detailTextLabel.text = beverage.detail;
 
     return cell;
 }

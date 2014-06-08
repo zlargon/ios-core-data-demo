@@ -15,7 +15,5 @@
 @interface MainTableViewController : UITableViewController
 
 @property (nonatomic, assign) AppDelegate *appDelegate;
-@property (strong) NSMutableArray* titleList;
-@property (strong) NSMutableArray* tableList;
 
 @end
