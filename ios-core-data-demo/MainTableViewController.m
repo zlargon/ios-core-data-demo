@@ -7,14 +7,32 @@
 //
 
 #import "MainTableViewController.h"
-#import "AddViewController.h"
-#import "ModifyViewController.h"
 
 @interface MainTableViewController ()
 
 @end
 
 @implementation MainTableViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    }
+    return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    // load data
+    [self.appDelegate loadDataFromCoreData];
+
+    // update UI
+    [self.tableView reloadData];
+}
 
 - (void)viewDidLoad
 {

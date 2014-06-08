@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "AddViewController.h"
+#import "ModifyViewController.h"
 
+@class AppDelegate;
 @interface MainTableViewController : UITableViewController
 
+@property (nonatomic, assign) AppDelegate *appDelegate;
 @property (strong) NSMutableArray* titleList;
 @property (strong) NSMutableArray* tableList;
 
