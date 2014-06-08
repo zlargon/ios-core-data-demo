@@ -10,4 +10,8 @@
 
 @interface AddViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UITextField *detailTextField;
+- (IBAction)addItem:(id)sender;
+
 @end

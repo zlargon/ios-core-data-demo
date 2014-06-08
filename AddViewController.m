@@ -35,4 +35,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)addItem:(id)sender {
+    NSLog(@"Add Item");
+}
+
 @end
