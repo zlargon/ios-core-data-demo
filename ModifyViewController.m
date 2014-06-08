@@ -24,6 +24,15 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    // setup current beverage title and detail passed by MainViewController
+    self.titleTextField.text = self.currentBeverage.title;
+    self.detailTextField.text = self.currentBeverage.detail;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

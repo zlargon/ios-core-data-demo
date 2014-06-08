@@ -170,6 +170,8 @@
                                                                                         bundle:nil];
 
     // Pass the selected object to the new view controller.
+    modifyViewController.title = @"Modify";
+    modifyViewController.currentBeverage = self.appDelegate.tableList[indexPath.row];
 
     // Push the view controller.
     [self.navigationController pushViewController:modifyViewController animated:YES];
