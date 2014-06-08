@@ -10,4 +10,8 @@
 
 @interface ModifyViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UITextField *detailTextField;
+- (IBAction)modifyItem:(id)sender;
+
 @end
